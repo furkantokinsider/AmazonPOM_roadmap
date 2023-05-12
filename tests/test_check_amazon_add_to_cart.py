@@ -43,14 +43,3 @@ class TestCheckAmazonAddToCart(BaseTest):
 
     def tearDown(self):
         self.driver.quit()
-
-
-
-
-
-
-
-
-
-
-

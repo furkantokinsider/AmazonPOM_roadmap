@@ -23,4 +23,3 @@ class BasePage(object):
 
     def wait_element(self, *locator, message=''):
         return self.wait.until(ec.element_to_be_clickable(locator), message)
-

@@ -21,4 +21,3 @@ class HomePage(BasePage):
         self.click_element(*self.SEARCH_BTN)
 
         return SearchResultPage(self.driver)
-

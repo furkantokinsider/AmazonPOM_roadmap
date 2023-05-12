@@ -21,6 +21,3 @@ class ProductPage(BasePage):
         product_name = self.find_element(*ProductPage.PRODUCT_NAME).text
 
         return product_name
-
-
-

@@ -15,5 +15,3 @@ class ShoppingListPage(BasePage):
         product_name = self.find_element(*ShoppingListPage.PRODUCT_NAME_IN_LIST).text
 
         return product_name
-
-
