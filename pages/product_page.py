@@ -18,6 +18,6 @@ class ProductPage(BasePage):
         return ShoppingListPage(self.driver)
 
     def get_product_name(self):
-        product_name = self.find_element(*ProductPage.PRODUCT_NAME).text
+        product_name = self.find_element(*self.PRODUCT_NAME).text
 
         return product_name
