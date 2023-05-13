@@ -15,3 +15,6 @@ class ShoppingListPage(BasePage):
         product_name = self.find_element(*self.PRODUCT_NAME_IN_LIST).text
 
         return product_name
+
+    def is_delete_confirmation_displayed(self):
+        return self.DELETE_CONFIRMATION_BTN

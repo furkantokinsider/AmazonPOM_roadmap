@@ -21,3 +21,12 @@ class ProductPage(BasePage):
         product_name = self.find_element(*self.PRODUCT_NAME).text
 
         return product_name
+
+    def wait_for_add_to_list_button(self):
+        self.wait_element(*self.ADD_TO_LIST_BTN)
+
+    def is_add_to_list_button_displayed(self):
+        return self.ADD_TO_LIST_BTN
+
+    def wait_for_shopping_list_button(self):
+        self.wait_element(*self.SHOPPING_LIST_BTN)

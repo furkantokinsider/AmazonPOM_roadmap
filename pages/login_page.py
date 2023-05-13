@@ -21,3 +21,9 @@ class LoginPage(BasePage):
 
     def click_sign_in(self):
         self.click_element(*self.SIGN_IN_BTN)
+
+    def is_login_text_visible(self):
+        return self.LOGIN_TEXT
+
+    def wait_for_password_textbox(self):
+        self.wait_element(*self.PASSWORD_TEXTBOX)

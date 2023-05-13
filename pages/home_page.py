@@ -21,3 +21,9 @@ class HomePage(BasePage):
         self.click_element(*self.SEARCH_BTN)
 
         return SearchResultPage(self.driver)
+
+    def is_homepage_banner_displayed(self):
+        return self.HOME_PAGE_BANNER
+
+    def wait_for_search_box(self):
+        self.wait_element(*self.SEARCH_BOX)

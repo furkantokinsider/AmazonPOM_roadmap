@@ -28,3 +28,9 @@ class SearchResultPage(BasePage):
         current_page = self.find_element(*self.CURRENT_PAGE).text
 
         return current_page
+
+    def is_left_banner_displayed(self):
+        return self.RESULT_PAGE_LEFT_BANNER
+
+    def wait_for_second_page_button(self):
+        self.wait_element(*self.SECOND_PAGE_BTN)
