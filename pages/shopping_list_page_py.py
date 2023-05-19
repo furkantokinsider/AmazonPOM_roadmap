@@ -17,4 +17,4 @@ class ShoppingListPage(BasePage):
         return product_name
 
     def is_delete_confirmation_displayed(self):
-        return self.DELETE_CONFIRMATION_BTN
+        return self.find_element(*self.DELETE_CONFIRMATION_BTN)

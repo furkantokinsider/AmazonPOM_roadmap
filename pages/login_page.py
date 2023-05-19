@@ -23,7 +23,7 @@ class LoginPage(BasePage):
         self.click_element(*self.SIGN_IN_BTN)
 
     def is_login_text_visible(self):
-        return self.LOGIN_TEXT
+        return self.find_element(*self.LOGIN_TEXT)
 
     def wait_for_password_textbox(self):
         self.wait_element(*self.PASSWORD_TEXTBOX)
